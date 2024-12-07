@@ -1,0 +1,54 @@
+@media (max-width: 600px) {
+    header {
+        position: relative;
+    }
+
+    header .logo img {
+        width: 150px;
+        height: 70px;
+        margin-left: 20px;
+    }
+
+    .welcome .title {
+        position: absolute;
+        font-size: 50px;
+        bottom: 70px;
+    }
+
+    .welcome .text {
+        position: absolute;
+        font-size: 16px;
+        bottom: 160px;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        width: 100%;
+        background-color: #15154c;
+        background: transparent;
+        text-align: left;
+    }
+
+    header nav li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 23px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header nav {
+        display: block !important;
+    }
+}

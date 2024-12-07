@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*********************
+    Header section
+*********************/
+header {
+  display: flex;
+  align-items: center;
+  background-color: #04072e;
+  height: 70px;
+}
+
+
+header .logo {
+  flex-grow: 1;
+  width: 200px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+header .logo img {
+  flex-grow: 1;
+  width: 150px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+
+
+nav {
+  margin-right: 30px;
+  background: transparent;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+  text-decoration: none;
+  background-color: none;
+  font-size: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(193, 217, 95);
+
+}
+
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+
+.menu-icon i {
+  color: white;
+}
+
+.menu-icon i:hover {
+  color: #7be97d;
+}
+
+/*********************
+    Welcome section
+*********************/
+.welcome {
+  background: url("images/Improves-Soil-Aeration-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  min-height: calc(100vh - 70px);
+
+}
+
+.welcome .title {
+  text-align: left;
+  padding-top: 200px;
+  font-size: 50px;
+  color: rgb(193, 217, 95);
+  margin-left: 50px;
+  animation: floating 3s alternate linear infinite;
+}
+
+.welcome .text {
+  text-align: left;
+  padding-top: 140px;
+  font-size: 20px;
+  color: rgb(193, 217, 95);
+  margin-left: 50px;
+  line-height: 2;
+}
+
+/* Keyframes for the animation */
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
